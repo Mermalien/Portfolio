@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  overflow-x: hidden;
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 1px;
+}
+h2,
+h3 {
+  text-align: center;
+}
+h2 {
+  color: rgb(222, 167, 19);
+}

@@ -1,23 +1,20 @@
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Main from './components/Main'
-import Projects from './components/Projects'
-import Sidenav from './components/Sidenav'
-import Work from './components/Work'
+import "./App.css";
+import { About } from "./components/About/About";
+import { Me } from "./components/Me/Me";
+import { NavBar } from "./components/NavBar/NavBar";
+import { ProjectsList } from "./components/Proyects/ProjectsList";
+import { Skills } from "./components/Skills/Skills";
 
 function App() {
   return (
-    <div>
-      <Sidenav/>
-      <Main/>
-      <Work />
-      <Projects />
+    <div className="App">
+      <NavBar />
+      <Me />
+      <ProjectsList />
+      <Skills />
       <About />
-      <Contact />
-      <Footer/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,57 @@
+@keyframes light {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(230, 149, 8, 0.858);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px rgba(209, 227, 39, 0.858);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(230, 149, 8, 0.858);
+  }
+}
+
+.menu {
+  animation: light 2s infinite;
+  box-sizing: border-box;
+  width: auto;
+  max-height: 300px;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 1rem;
+  /* background-color: #ff8b1efc;*/
+  color: rgba(189, 194, 190, 0.67);
+  background-color: rgb(43, 43, 43);
+  position: fixed;
+}
+.menu a {
+  color: rgba(189, 194, 190, 0.67);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hamburguer {
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+}
+
+.open-menu {
+  display: flex;
+  gap: 1rem;
+}
+.open-menu a {
+  text-decoration: none;
+}
+.closed-menu {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.react-icon {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  display: flex;
+  color: white;
+}

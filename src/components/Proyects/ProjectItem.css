@@ -1,0 +1,67 @@
+.list-item-project {
+  list-style: none;
+}
+.item-project {
+  text-align: justify;
+  height: 550px;
+  width: 330px;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-areas:
+    "image image"
+    "title title"
+    "description description"
+    "button link";
+  background-color: rgba(28, 27, 27, 0.945);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgb(66, 167, 22);
+}
+h3 {
+  width: 100%;
+  height: 25px;
+  grid-area: title;
+  color: #c3b824;
+}
+.item-project-description {
+  grid-area: description;
+  text-align: center;
+  color: white;
+}
+.show-description {
+  grid-area: button;
+  margin-left: 10px;
+  width: 60%;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 15px;
+  background-image: linear-gradient(135deg, #eaea52 1%, #f8d808 100%);
+}
+
+.item-project img {
+  cursor: pointer;
+  width: 100%;
+  height: 250px;
+  grid-area: image;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease-in-out;
+}
+.item-project img.selected {
+  width: 90%;
+  height: 500px;
+  transform: scale(1);
+}
+.link-project {
+  text-align: center;
+  grid-area: link;
+  margin-top: 20px;
+}
+.link-project a {
+  text-decoration: none;
+  color: rgb(213, 209, 198);
+}
+
+@media (min-width: 765px) {
+  .item-project {
+    height: 550px;
+  }
+}
